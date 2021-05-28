@@ -9,7 +9,7 @@
       duration: 3000,
       easing: 'swing',
       step: function (now) {
-        ths.text(Math.ceil(now));
+        ths.text(divided(Math.ceil(now)));
       }
     });
   }

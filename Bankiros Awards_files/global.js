@@ -3,6 +3,9 @@ $.fn.hasAttr = function (name) {
   return this.attr(name) !== undefined
 }
 
+function divided (str) {
+  return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
+}
 
 //Плавная прокрутка к элементу
 function onlyScroll (offset, id) {
